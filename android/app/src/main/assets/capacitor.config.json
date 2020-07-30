@@ -1,0 +1,14 @@
+{
+  "appId": "io.ionic.starter",
+  "appName": "dbflowionic2",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "www",
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 0
+    }
+  },
+  "cordova": {},
+  "linuxAndroidStudioPath":"/home/alberto/android-studio/bin/studio.sh"
+}
