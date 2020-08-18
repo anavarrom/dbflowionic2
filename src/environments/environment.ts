@@ -12,8 +12,8 @@ export function socketProvider() {
 
 // Add here your keycloak setup infos
 let keycloakConfig: Keycloak.KeycloakConfig = {
-  // url: 'http://localhost:9080/auth/',
-  url: 'http://10.0.2.2:9080/auth/',
+  url: 'http://localhost:9080/auth/',
+  // url: 'http://10.0.2.2:9080/auth/',
   realm: 'jhipster',
   clientId: 'dbFlow'
   /*,
@@ -83,8 +83,8 @@ let rxStompConfig: InjectableRxStompConfig = {
 
 export const environment = {
   production: false,
-  basePath: 'http://10.0.2.2:8080/services',
-  // basePath: 'http://localhost:8080/services',
+  // basePath: 'http://10.0.2.2:8080/services',
+  basePath: 'http://localhost:8080/services',
   wsURL: 'localhost:4200',
   stompConfig,
   keycloakConfig
