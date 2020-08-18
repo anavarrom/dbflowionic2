@@ -1,0 +1,32 @@
+<ion-segment (ionChange)="segmentChanged($event)" value="javascript">
+  <ion-segment-button value='1'>
+    <ion-label>Pending</ion-label>
+  </ion-segment-button>
+  <ion-segment-button value='2'>
+    <ion-label>Read</ion-label>
+  </ion-segment-button>
+</ion-segment>
+
+<ion-content [ngSwitch]="type">  
+  <ion-list *ngSwitchCase='1'>
+
+    <!-- <ion-item *ngFor notif [ngForOf]="pending$ | async" button="true" (click)='notificationSlected(notif.id);'> -->
+    <ion-item *ngFor="let notif of (pending$ | async)" button="true" (click)='notificationSlected(notif.id);'>
+        <ion-label>Note (End)</ion-label>
+        <ion-note slot="end">asdfdasgsfghfdshdghgdhgd</ion-note>
+    </ion-item>
+  </ion-list>
+  <!-- <ion-list *ngSwitchCase='2'>
+    <ion-item *ngFor="let notif of (read$ | async)?" button="true" (click)='notificationSlected(notif.id);'>
+      <ion-label class="ion-text-wrap">
+        <ion-text color="primary">
+          <h3>H3 Primary Title</h3>
+        </ion-text>
+        <p>Paragraph line 1</p>
+        <ion-text color="secondary">
+          <p>Paragraph line 2 secondary</p>
+        </ion-text>
+      </ion-label>
+    </ion-item>
+  </ion-list> -->
+</ion-content>

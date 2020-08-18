@@ -1,0 +1,12 @@
+<p>
+  chat-detail works!  in {{(selected$ | async)?.id}}
+</p>
+
+<ion-item *ngFor="let message of (selected$ | async)?.messages">
+  <ion-label>{{message.body}}</ion-label>
+</ion-item>
+
+<!-- <ion-input placeholder="Enter Message"></ion-input><button item-right (click)='sendMessage();' [(ngModel)]='newMessageText' >Hello</button> -->
+<ion-input placeholder="Enter Message" name="newMessageText" [(ngModel)]='newMessageText'  ngDefaultControl>
+  
+</ion-input><button item-right (click)='sendMessage();' >Hello</button>

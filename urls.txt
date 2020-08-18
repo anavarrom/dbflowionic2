@@ -1,0 +1,56 @@
+Portainer
+---------
+sudo docker run -d -p 8000:8000 -p 9000:9000 -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer
+
+Generar docker
+--------------
+sudo ./mvnw package -Pdev verify jib:dockerBuild
+
+Lanzarlo todo
+-------------
+
+sudo docker-compose -f src/main/docker/app.yml up
+sudo docker-compose -f src/main/docker/appOnly.yml up
+sudo docker-compose -f src/main/docker/appDev.yml up
+sudo docker-compose -f src/main/docker/appInfra.yml up
+
+Keycloack
+----------
+sudo docker-compose -f src/main/docker/keycloak.yml up
+
+Consul
+-------
+sudo docker-compose -f src/main/docker/consul.yml up
+
+Google API Key
+--------------
+AIzaSyA7eF726_gERt7nK_CFdgjusVD1Njp4lQ4
+
+Ionic
+-----
+Lanzar studio -> npx cap open android
+Sincronizar --> ionic capacitor copy android
+
+testGateway
+---------
+ user:user
+ pass:user
+
+ user:admin
+ pass:admin
+
+
+JDL Studio
+----------
+user: anavarrom
+pass: Tarrega202
+
+Portainer
+---------
+ user:admin
+ pass:adminadmin
+
+keycloack
+---------
+ user:admin
+ pass:admin

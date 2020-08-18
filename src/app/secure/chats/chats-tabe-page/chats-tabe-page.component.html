@@ -1,0 +1,6 @@
+<p>
+  chats-tabe-page works!
+</p>
+<ion-item *ngFor="let chat of (chats$ | async)" button="true" (click)='chatSelected(chat.id);'>
+  <ion-label>{{chat.subject}}</ion-label>
+</ion-item>
